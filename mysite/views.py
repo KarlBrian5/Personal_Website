@@ -1,6 +1,8 @@
 from django.shortcuts import render
 import requests, json
 from .models import Contact
+from django.core.mail import send_mail
+from django.conf import settings
 
 
 def index(request):
